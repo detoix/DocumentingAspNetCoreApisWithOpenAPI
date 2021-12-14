@@ -3,9 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>Library.API.xml</DocumentationFile>
     <OutputPath></OutputPath>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>

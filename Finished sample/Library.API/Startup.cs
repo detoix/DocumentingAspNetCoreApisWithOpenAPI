@@ -193,10 +193,8 @@ namespace Library.API
                 setupAction.OperationFilter<GetBookOperationFilter>();
                 setupAction.OperationFilter<CreateBookOperationFilter>();
 
-                var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
-
-                setupAction.IncludeXmlComments(xmlCommentsFullPath);
+                setupAction.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Library.API.xml"));
+                setupAction.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Library.DataStructures.xml"));
             });
         }
 

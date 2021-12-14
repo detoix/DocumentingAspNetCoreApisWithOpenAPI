@@ -13,6 +13,9 @@ namespace Library.DataStructures
     /// </summary>
     public class Book
     {
+        /// <summary>
+        /// The id of the book
+        /// </summary>
         public Guid Id { get; set; }
 
         public string AuthorFirstName { get; set; }

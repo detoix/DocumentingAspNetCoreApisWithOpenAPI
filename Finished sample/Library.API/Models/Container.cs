@@ -5,6 +5,6 @@ namespace Library.API.Models
 
     public class Container<T>
     {
-        T Content { get; }
+        public T Content { get; set; }
     }    
 }
