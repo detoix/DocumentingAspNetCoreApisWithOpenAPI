@@ -1,0 +1,1 @@
+mkdir -p bin && mkdir -p bin/doxy && doxygen doxyconfig && cp -r ./wwwroot/Assets bin/doxy/html
