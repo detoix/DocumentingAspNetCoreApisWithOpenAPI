@@ -2,6 +2,7 @@
 using Library.API.Attributes;
 using Library.API.Models;
 using Library.API.Services;
+using Library.DataStructures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;

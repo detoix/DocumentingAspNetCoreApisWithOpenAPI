@@ -45,7 +45,6 @@
             ] 
             </remarks>
             <response code="200">Returns the updated author</response>
-            <response code="404">Returned when the author wasn't found</response>
         </member>
         <member name="M:Library.API.Controllers.AuthorsControllerV2.GetAuthors">
             <summary>
