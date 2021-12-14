@@ -67,7 +67,7 @@ namespace Library.API.Controllers
         [RequestHeaderMatchesMediaType(HeaderNames.Accept,
             "application/json",
             "application/vnd.marvin.book+json")]
-        public async Task<ActionResult<Book>> GetBook(
+        public async Task<ActionResult<IContent<Book>>> GetBook(
             Guid authorId,
             Guid bookId)
         {
