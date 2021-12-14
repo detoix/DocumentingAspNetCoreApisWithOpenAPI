@@ -67,7 +67,7 @@ namespace Library.API.Controllers
         [RequestHeaderMatchesMediaType(HeaderNames.Accept,
             "application/json",
             "application/vnd.marvin.book+json")]
-        public async Task<ActionResult<IContent<Book>>> GetBook(
+        public async Task<ActionResult<Container<Book>>> GetBook(
             Guid authorId,
             Guid bookId)
         {
@@ -75,14 +75,8 @@ namespace Library.API.Controllers
             {
                 return NotFound();
             }
-
-            var bookFromRepo = await _bookRepository.GetBookAsync(authorId, bookId);
-            if (bookFromRepo == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(_mapper.Map<Book>(bookFromRepo));
+            
+            return Ok(default(Container<Book>));
         }
 
         /// <summary>

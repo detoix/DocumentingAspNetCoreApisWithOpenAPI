@@ -3,7 +3,7 @@ using System;
 namespace Library.API.Models
 {
 
-    public interface IContent<T>
+    public class Container<T>
     {
         T Content { get; }
     }    
